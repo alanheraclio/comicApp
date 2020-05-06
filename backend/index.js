@@ -11,8 +11,8 @@ const port = app.get('port');
 
 //MIDDLEWARES
 app.use(morgan('dev'));
-app.use(cors({origin: 'http://127.0.0.1:8887'}));
-//app.use(cors({origin: 'http://localhost:4200'}));
+//app.use(cors({origin: 'http://127.0.0.1:8887'}));
+app.use(cors({origin: 'http://localhost:4200'}));
 app.use(express.json());
 
 //ROUTES:need to be after cors.
